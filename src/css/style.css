@@ -1,0 +1,83 @@
+:root {
+  --blue-050: #edf6fd; /*used https://www.tints.dev/?output=hex*/
+  --blue-100: #dceefb;
+  --blue-200: #add7f6;
+  --blue-300: #7fc1f0;
+  --blue-400: #51abeb;
+  --blue-500: #1f92e5;
+  --blue-600: #1576bc;
+  --blue-700: #10598e;
+  --blue-800: #0b3c60;
+  --blue-900: #051d2e;
+  --blue-950: #030e17;
+
+  --blue-grey-050: #f0f4f8;
+  --blue-grey-100: #e0e8f0;
+  --blue-grey-200: #bdcfe0;
+  --blue-grey-300: #9ab5d0;
+  --blue-grey-400: #7499be;
+  --blue-grey-500: #5180ae;
+  --blue-grey-600: #41668b;
+  --blue-grey-700: #314d68;
+  --blue-grey-800: #203346;
+  --blue-grey-900: #101a23;
+  --blue-grey-950: #080d11;
+
+  --yellow-50: #fffaeb; 
+  --yellow-100: #fff4d1;  
+  --yellow-200: #ffe79e;
+  --yellow-300: #ffda6b;
+  --yellow-400: #ffcd38;
+  --yellow-500: #ffc105;
+  --yellow-600: #cc9900;
+  --yellow-700: #997300;
+  --yellow-800: #664c00;
+  --yellow-900: #332600;
+
+  --red-50: #ffeeee;
+  --red-100: #ffd6d6;
+  --red-200: #ff9e9e;
+  --red-300: #ff6b6b;
+  --red-400: #ff3838;
+  --red-500: #ff0505;
+  --red-600: #d10000;
+  --red-700: #9e0000;
+  --red-800: #660000;
+  --red-900: #330000;
+  --red-950: #1a0000;
+
+  --teal-50: #f0fcf9;
+  --teal-100: #d9f7f0;
+  --teal-200: #aeefdf;
+  --teal-300: #84e6ce;
+  --teal-400: #59debd;
+  --teal-500: #2fd5ac;
+  --teal-600: #23ae8b;
+  --teal-700: #198066;
+  --teal-800: #115544;
+  --teal-900: #082b22;
+  --teal-950: #041511;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+body {
+  background-color: var(--blue-grey-050);
+  color: var(--blue-grey-900);
+  padding: 1em;
+}
+
+@media (min-width: 600px) {
+  body {
+    padding: 3em;
+  }
+}
