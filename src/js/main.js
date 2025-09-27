@@ -52,13 +52,13 @@ function makeTaskElement(taskname) {
 //==================
 // Event Listeners (Execution)
 // =================
+//Adding a task to the DOM
 todolist.addEventListener('submit', e => {
     e.preventDefault()  //prevent submit behavior
     
     //Get what the user typed
     const newTaskField = todolist.querySelector('input') //select the input field
     const inputValue = newTaskField.value.trim() //grab the input value and remove extra whitespace
-
 
     //Clear the new task field
     newTaskField.value = ''
@@ -74,4 +74,18 @@ todolist.addEventListener('submit', e => {
 
     //Append to the DOOM
     taskList.appendChild(taskElement) //add task element to the UL
+})
+
+//Deleting a task from the DOM
+taskList.addEventListener('click', e => {
+    // console.log(e.target)
+    //return, if not the delete button
+    if(!e.target.matches('.task__delete-button')) return
+
+    //Removes the task
+    const taskDiv = e.target.parentElement
+    taskList.removeChild(taskDiv)
+
+    //Triggers empty state
+    if (taskList.children.length === 0) taskList.innerHTML = ''
 })
